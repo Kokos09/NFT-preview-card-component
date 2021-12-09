@@ -1,40 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>NFT Preview Card Component</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="assets/style.css" />
+  
+  <title>Frontend Mentor | NFT preview card component</title>
 </head>
 <body>
-    <div class="card-wrapper">
-        <div class="card-content">
-            <figure class="card__image-wrapper">
-                <img src="images/image-equilibrium.jpg" alt="Card Image" class="card-image">
-                <div class="card-image__overlay">
-                </div>
-                <img src="images/icon-view.svg" class="icon-view" alt="Icon view">
-            </figure>
-            <h1 class="card-title">Equilibrium #3429</h1>
-            <p class="card-description">Our Equilibrium collection promotes balance and calm.</p>
-            <div class="equilibrium-value__wrapper">
-                <div class="equilibrium-value">
-                    <img src="images/icon-ethereum.svg" alt="Icon Ethereum">
-                    <h4 class="equilibrium-value-text">0.041 ETH</h4>
-                </div>
-                <div class="days-left__wrapper">
-                    <img src="images/icon-clock.svg" alt="Icon Clock">
-                    <p class="days-left">3 days left</p>
-                </div>
-            </div>
-            <div class="user-info__wrapper">
-                <figure class="user-info__image-wrapper">
-                    <img src="images/image-avatar.png" alt="User Info Image" class="user-info__image">
-                </figure>
-                <p class="user-info">Creation of <span class="user-name">Jules Wyvern</span></p>
-            </div>
-        </div>
+<div class="container">
+  <div class="layout-area">
+    <div class="image-area">
+      <div class="photo-hover">
+        <img src="images/icon-view.svg" alt="Icon view" />
+      </div>
+      <img src="images/image-equilibrium.jpg" alt="Icon view">  
     </div>
+    <div class="text-area">
+      <h4>Equilibrium #3429</h4>
+      <p>Our Equilibrium Collection promotes <br/> 
+          balance and calm
+      </p>
+    </div>
+    <div class="status-area">
+      <div class="ETH">
+        <img src="images/icon-ethereum.svg" alt="Icon Etherum"/>
+        0.041ETH
+    </div>
+      <div class="time">
+        <img src="images/icon-clock.svg" alt="Icon Clock" />
+        3 days left
+      </div>
+    </div>
+    <div class="line"></div>
+    <div class="avatar-area">
+      <img src="images/image-avatar.png" alt="Icon Avatar" />
+      <p>Creation of <span>Jules Wyvern</span>
+    </div>
+  </div>
+</div>
+<div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="#">Erick Melo</a>.
+</div>
 </body>
 </html>
